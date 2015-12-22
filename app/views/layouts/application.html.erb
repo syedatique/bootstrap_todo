@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BootstrapTodoApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-1"><h1>My Own TODO</h1></div> -->
+      <div class="col-md-12"><%= yield %></div>
+    </div>
+
+  <footer class="footer">
+    <div class="container">
+      <ul class="nav nav-pills">
+      <li role="presentation" class="active"><a href="#">About</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+  </div>
+</body>
+</html>
